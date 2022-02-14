@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .title{
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px ;
+        }
+        
+
+    </style>
+</head>
+<body>
+   <div class="title"><h1>Pricing Table </h1></div>
+
+   <table>
+       <thead>
+           <th class="item">Item</th>
+           <th class="item">Weight</th>
+           <th class="item">Number of Item</th>
+       </thead>
+       <tbody>
+           <tr>
+                <td class="item">Socks</td>
+                <td class="item">0.3lbs</td>
+                <td class="item"><input class="Input socks" type="number" ></td>
+            </tr>
+           <tr>
+                <td class="item">Pants</td>
+                <td class="item">0.5lbs</td>
+                <td class="item"><input class="Input pants"  type="number" ></td>
+            </tr>
+           <tr>
+                <td>Shirts</td>
+                <td>0.8lbs</td>
+                <td><input class="Input shirts" type="number" ></td>
+            </tr>
+        
+       </tbody>
+      
+   </table>
+   <div> <span>Total Price</span> <span class="TotalPrice"></span></div>
+   <div> <span>Total Weight</span> <span class="Totalweight"></span></div>
+<script src="./script.js"></script>
+</body>
+</html>
